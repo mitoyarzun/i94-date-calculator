@@ -22,6 +22,17 @@ function Trip ({ trip, nextTrip }) {
   return <li>{str}</li>;
 }
 
+function InputArea ({ onChange }) {
+  return (
+    <>
+      <textarea
+        className="inputArea"
+        onChange={e => onChange(e.target.value)}
+      ></textarea>
+    </>
+  );
+}
+
 class App extends Component {
 
   constructor () {
@@ -29,12 +40,9 @@ class App extends Component {
     this.state = {
       trips: [],
     };
-    this.textArea = React.createRef();
   }
 
-  handleProcess = () => {
-    const text = this.textArea.current.value;
-
+  handleProcess = (text) => {
     const trips = [];
 
     let currentDate = null;
@@ -67,16 +75,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <textarea
-          className="inputArea"
-          onChange={this.handleProcess}
-          ref={this.textArea}
-        ></textarea>
-        <button
-          onClick={this.handleProcess}
-        >
-          Process
-        </button>
+        <InputArea onChange={this.handleProcess} />
         <br/>
         Results
         <ul className="results">
