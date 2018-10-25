@@ -2,6 +2,10 @@
 
 This app allows you to paste your travel history from the CBP website, and calculate the duration of each one of your trips.
 
+## Hosted version
+
+[https://mitoyarzun.github.io/i94-date-calculator/](https://mitoyarzun.github.io/i94-date-calculator/)
+
 ## Installation
 
 ```sh
