@@ -1,7 +1,6 @@
 {
   "name": "i94-date-calculator",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@material-ui/core": "^3.3.1",
     "react": "^16.6.0",
