@@ -1,6 +1,8 @@
 {
   "name": "i94-date-calculator",
   "version": "0.1.0",
+  "author": "Jaime Oyarzún Knittel",
+  "homepage": "https://mitoyarzun.github.io/i94-date-calculator/",
   "dependencies": {
     "@material-ui/core": "^3.3.1",
     "react": "^16.6.0",
@@ -12,7 +14,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -22,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
