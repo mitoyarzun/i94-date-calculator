@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/i94-date-calculator/precache-manifest.5bb65fddb7109d86119431e0e72fcb55.js"
+  "/i94-date-calculator/precache-manifest.66f85f82d9ee93e96e02eee632d4bfe9.js"
 );
 
 workbox.clientsClaim();

@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/i94-date-calculator/static/css/main.0ef8aa76.chunk.css"
   },
   {
-    "revision": "b7c7be98b20bd47091b250d03cb0c81f",
+    "revision": "3cdb7b3f293c17bb51990a8ac0f3df57",
     "url": "/i94-date-calculator/index.html"
   }
 ];
