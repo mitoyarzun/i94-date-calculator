@@ -11,7 +11,7 @@ export const TravelTypes = {
   Departure: 'Departure',
 };
 
-function dayDifference (date1, date2) {
+export function dayDifference (date1, date2) {
   const diff = Math.floor(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24)));
   return `${diff} days`;
 }
@@ -23,7 +23,7 @@ export function Trip ({ first, trip, nextTrip }) {
     duration = dayDifference(trip.parsedDate, nextTrip.parsedDate);
   }
   
-  if (first) {
+  if (trip.travelType === TravelTypes.Arrival && first) {
     duration = dayDifference(trip.parsedDate, new Date());
   }
   

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`textToTrips should convert text to trips 1`] = `
+Array [
+  Object {
+    "date": "2018-03-13",
+    "parsedDate": 2018-03-13T00:00:00.000Z,
+    "portOfEntry": "JFK",
+    "travelType": "Arrival",
+  },
+  Object {
+    "date": "2018-01-20",
+    "parsedDate": 2018-01-20T00:00:00.000Z,
+    "portOfEntry": "SEA",
+    "travelType": "Departure",
+  },
+  Object {
+    "date": "2018-01-03",
+    "parsedDate": 2018-01-03T00:00:00.000Z,
+    "portOfEntry": "PHO",
+    "travelType": "Arrival",
+  },
+  Object {
+    "date": "2017-08-17",
+    "parsedDate": 2017-08-17T00:00:00.000Z,
+    "portOfEntry": "CLT",
+    "travelType": "Departure",
+  },
+  Object {
+    "date": "2017-02-21",
+    "parsedDate": 2017-02-21T00:00:00.000Z,
+    "portOfEntry": "SFR",
+    "travelType": "Arrival",
+  },
+  Object {
+    "date": "2017-02-20",
+    "parsedDate": 2017-02-20T00:00:00.000Z,
+    "portOfEntry": "Unavailable",
+    "travelType": "Departure",
+  },
+]
+`;

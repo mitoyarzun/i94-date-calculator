@@ -2,45 +2,10 @@ import React, { Component } from 'react';
 import GithubCorner from 'react-github-corner';
 
 import { InputArea } from './InputArea';
-import { TripsTable, TravelTypes } from './Trips';
+import { TripsTable } from './Trips';
+import textToTrips from './textToTrips';
 
 import './App.css';
-
-function isDate (date) {
-  return date.match(/[0-9]{4}-[0-9]{2}-[0-9]{2}/);
-}
-
-function isTravelType (type) {
-  return type === TravelTypes.Arrival || type === TravelTypes.Departure;
-}
-
-function isPortOfEntry (port) {
-  return port.match(/[A-Z]{3}|Unavailable/);
-}
-
-function textToTrips (text) {
-  const trips = [];
-
-  let currentDate = null;
-  let currentTravelType = null;
-
-  text.split(/\n/).forEach((line) => {
-    if (isDate(line)) {
-      currentDate = line;
-    } else if (isTravelType(line)) {
-      currentTravelType = line;
-    } else if (isPortOfEntry(line)) {
-      trips.push({
-        date: currentDate,
-        parsedDate: new Date(currentDate),
-        travelType: currentTravelType,
-        portOfEntry: line,
-      });
-    }
-  });
-
-  return trips;
-}
 
 function Instructions () {
   return (
